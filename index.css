@@ -1,0 +1,164 @@
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:salmon;
+
+}
+
+.heart {
+     height: 200px;
+     width: 200px;
+     background-color: red;
+     position: relative;
+     transform: rotate(45deg);
+     box-shadow: -20px 20px 200px red;
+     animation: palpitar 0.7s linear infinite alternate;
+     left: -250px;
+}
+
+.contenido{
+    position:relative;
+    margin-bottom: 50px;
+    text-align: center;
+    left: -480px;
+    color: white;
+}
+
+@keyframes palpitar {
+    0%{transform: rotate(45deg) scale(1.10);}
+    80%{transform: rotate(45deg) scale(1.0);}
+    100%{transform: rotate(45deg) scale(0.8);}
+}
+
+.heart::before  {
+    content: "";
+    position: absolute;
+    height: 200px;
+    width: 200px;
+    background: red;
+    right: 50%;
+    border-radius: 50%;
+    box-shadow: 20px 20px 200px red;
+}
+
+.heart::after  {
+    content: "";
+    position: absolute;
+    height: 200px;
+    width: 200px;
+    background: red;
+    top: -50%;
+    border-radius: 50%;
+    box-shadow: 20px 20px 200px red;
+}
+
+.contenido2 {
+    position: absolute;
+    margin-bottom: 50px;
+    text-align: center;
+    top: -0%;
+    right: 270px;
+    color: black;
+}
+
+.contenido3 {
+    font-family: cursive;
+    position: absolute;
+    margin-bottom: 50px;
+    text-align: right;
+    top: 10%;
+    right: 200px;
+    color: black;
+}
+
+.columna {
+    position: absolute;
+    right: 50px;
+    float: right;
+    width: 50%;
+    text-align:center;
+    font-family: cursive;
+    top: 17%;
+    color: black;
+}
+
+.columna2 {
+    position: absolute;
+    right: 50px;
+    float: right;
+    width: 50%;
+    text-align:center;
+    font-family: cursive;
+    top: 30%;
+    color: black;
+}
+
+.columna3 {
+    position: absolute;
+    right: 50px;
+    float: right;
+    width: 50%;
+    text-align:center;
+    font-family: cursive;
+    top: 43%;
+    color: black;
+}
+
+.columna4 {
+    position: absolute;
+    right: 50px;
+    float: right;
+    width: 50%;
+    text-align:center;
+    font-family: cursive;
+    top: 55%;
+    color: black;
+}
+
+.columna5 {
+    position: absolute;
+    right: 50px;
+    float: right;
+    width: 50%;
+    text-align:center;
+    font-family: cursive;
+    top: 70%;
+    color: black;
+}
+
+.columna6 {
+    position: absolute;
+    right: 50px;
+    float: right;
+    width: 50%;
+    text-align:center;
+    font-family: cursive;
+    top: 85%;
+    color: black;
+}
+
+
+.columna7 {
+    position:absolute;
+    left: 40px;
+    width: 50%;
+    text-align:justify;
+    font-family: cursive;
+    top:100%;
+    color: black;
+}
+
+img {
+    height: 50%;
+    position: absolute;
+    margin-top: 880px;
+    right: 60px;
+    width: 35%;
+    border-radius: 50px;  
+    box-shadow: 0px 0px 50px  5px rgba(212, 198, 198, 0.852);  
+}
+
